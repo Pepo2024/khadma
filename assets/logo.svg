@@ -1,0 +1,161 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     viewBox="0 0 640 760" width="640" height="760" role="img"
+     aria-labelledby="logoTitle logoDesc">
+  <title id="logoTitle">شعار خدمة اجتماع بولس الرسول</title>
+  <desc id="logoDesc">شعار دائري بدرجات البيج والطين الدافئ يضم كتابًا مفتوحًا وصليبًا وأشعة، مع عبارة «بولس الرسول» و«خدمة الشباب».</desc>
+
+  <defs>
+    <!-- تدرجات -->
+    <radialGradient id="disc" cx="50%" cy="34%" r="78%">
+      <stop offset="0%" stop-color="#6b5140"/>
+      <stop offset="55%" stop-color="#4a3629"/>
+      <stop offset="100%" stop-color="#3a2a1f"/>
+    </radialGradient>
+
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f7e7cd"/>
+      <stop offset="28%" stop-color="#e8cda9"/>
+      <stop offset="58%" stop-color="#d4a17d"/>
+      <stop offset="82%" stop-color="#b9795b"/>
+      <stop offset="100%" stop-color="#f0d7b8"/>
+    </linearGradient>
+
+    <linearGradient id="goldSoft" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f6e2c6" stop-opacity=".9"/>
+      <stop offset="100%" stop-color="#d4a17d" stop-opacity=".15"/>
+    </linearGradient>
+
+    <radialGradient id="halo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f6e2c6" stop-opacity=".5"/>
+      <stop offset="60%" stop-color="#dcb08c" stop-opacity=".16"/>
+      <stop offset="100%" stop-color="#dcb08c" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="page" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff8ec"/>
+      <stop offset="100%" stop-color="#ead7bd"/>
+    </linearGradient>
+
+    <linearGradient id="titleFill" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#d4a17d"/>
+      <stop offset="22%" stop-color="#f7e7cd"/>
+      <stop offset="50%" stop-color="#f6e2c6"/>
+      <stop offset="78%" stop-color="#e8cda9"/>
+      <stop offset="100%" stop-color="#b9795b"/>
+    </linearGradient>
+
+    <!-- فلاتر -->
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="12"/>
+    </filter>
+    <filter id="shadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#332318" flood-opacity=".55"/>
+    </filter>
+
+    <!-- شعاع واحد يُعاد تدويره -->
+    <line id="ray" x1="0" y1="-136" x2="0" y2="-156"
+          stroke="url(#gold)" stroke-width="3" stroke-linecap="round"/>
+    <line id="rayLong" x1="0" y1="-132" x2="0" y2="-164"
+          stroke="url(#gold)" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- نجمة رباعية -->
+    <path id="spark" d="M0,-11 Q1.8,-1.8 11,0 Q1.8,1.8 0,11 Q-1.8,1.8 -11,0 Q-1.8,-1.8 0,-11 Z"
+          fill="url(#gold)"/>
+  </defs>
+
+  <!-- ===================== الشعار الدائري ===================== -->
+  <g filter="url(#shadow)">
+    <!-- هالة خلفية ناعمة -->
+    <circle cx="320" cy="300" r="198" fill="#dcb08c" opacity=".12" filter="url(#glow)"/>
+
+    <!-- القرص الكحلي -->
+    <circle cx="320" cy="300" r="192" fill="url(#disc)" stroke="url(#gold)" stroke-width="8"/>
+    <circle cx="320" cy="300" r="177" fill="none" stroke="#dcb08c" stroke-width="1.6" opacity=".55"/>
+    <circle cx="320" cy="300" r="167" fill="none" stroke="#dcb08c" stroke-width="1"
+            stroke-dasharray="2 9" opacity=".45"/>
+
+    <!-- الأشعة -->
+    <g transform="translate(320 300)" opacity=".62">
+      <use href="#ray" xlink:href="#ray"/>
+      <use href="#ray" xlink:href="#ray" transform="rotate(30)"/>
+      <use href="#ray" xlink:href="#ray" transform="rotate(60)"/>
+      <use href="#ray" xlink:href="#ray" transform="rotate(90)"/>
+      <use href="#ray" xlink:href="#ray" transform="rotate(120)"/>
+      <use href="#ray" xlink:href="#ray" transform="rotate(150)"/>
+      <use href="#ray" xlink:href="#ray" transform="rotate(180)"/>
+      <use href="#ray" xlink:href="#ray" transform="rotate(210)"/>
+      <use href="#ray" xlink:href="#ray" transform="rotate(240)"/>
+      <use href="#ray" xlink:href="#ray" transform="rotate(270)"/>
+      <use href="#ray" xlink:href="#ray" transform="rotate(300)"/>
+      <use href="#ray" xlink:href="#ray" transform="rotate(330)"/>
+      <g opacity=".9">
+        <use href="#rayLong" xlink:href="#rayLong"/>
+        <use href="#rayLong" xlink:href="#rayLong" transform="rotate(90)"/>
+        <use href="#rayLong" xlink:href="#rayLong" transform="rotate(180)"/>
+        <use href="#rayLong" xlink:href="#rayLong" transform="rotate(270)"/>
+      </g>
+    </g>
+
+    <!-- نجوم صغيرة عند الجوانب -->
+    <use href="#spark" xlink:href="#spark" transform="translate(172 300) scale(.8)" opacity=".85"/>
+    <use href="#spark" xlink:href="#spark" transform="translate(468 300) scale(.8)" opacity=".85"/>
+    <use href="#spark" xlink:href="#spark" transform="translate(320 112) scale(.6)" opacity=".7"/>
+    <use href="#spark" xlink:href="#spark" transform="translate(320 486) scale(.6)" opacity=".7"/>
+
+    <!-- هالة الصليب -->
+    <circle cx="320" cy="228" r="92" fill="url(#halo)"/>
+
+    <!-- الصليب -->
+    <g>
+      <rect x="311" y="154" width="18" height="172" rx="6" fill="url(#gold)" opacity=".35" filter="url(#glow)"/>
+      <rect x="311" y="154" width="18" height="172" rx="6" fill="url(#gold)"/>
+      <rect x="272" y="202" width="96" height="18" rx="6" fill="url(#gold)"/>
+      <rect x="315" y="158" width="4" height="160" rx="2" fill="#fff8ec" opacity=".5"/>
+      <rect x="276" y="206" width="88" height="4" rx="2" fill="#fff8ec" opacity=".45"/>
+    </g>
+
+    <!-- الكتاب المفتوح -->
+    <g>
+      <path d="M320 352 C292 334 254 330 214 338 L214 414 C254 406 292 410 320 428 Z"
+            fill="url(#page)" stroke="url(#gold)" stroke-width="3" stroke-linejoin="round"/>
+      <path d="M320 352 C348 334 386 330 426 338 L426 414 C386 406 348 410 320 428 Z"
+            fill="url(#page)" stroke="url(#gold)" stroke-width="3" stroke-linejoin="round"/>
+      <path d="M320 352 V428" stroke="#b9795b" stroke-width="3.5" stroke-linecap="round"/>
+
+      <!-- سطور الصفحتين -->
+      <g stroke="#b9795b" stroke-width="2" stroke-linecap="round" opacity=".65" fill="none">
+        <path d="M232 356 C260 351 286 354 306 363"/>
+        <path d="M232 372 C260 367 286 370 306 379"/>
+        <path d="M232 388 C260 383 286 386 306 395"/>
+        <path d="M334 363 C354 354 380 351 408 356"/>
+        <path d="M334 379 C354 370 380 367 408 372"/>
+        <path d="M334 395 C354 386 380 383 408 388"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- ===================== النصوص ===================== -->
+  <!-- فاصل علوي -->
+  <g opacity=".8">
+    <path d="M158 552 H268" stroke="url(#goldSoft)" stroke-width="2" stroke-linecap="round"/>
+    <path d="M372 552 H482" stroke="url(#goldSoft)" stroke-width="2" stroke-linecap="round"/>
+    <path d="M320 544 L328 552 L320 560 L312 552 Z" fill="url(#gold)"/>
+  </g>
+
+  <text x="320" y="626" text-anchor="middle" direction="rtl" unicode-bidi="embed"
+        font-family="Tajawal, 'Segoe UI', Tahoma, Arial, sans-serif"
+        font-size="68" font-weight="800" fill="url(#titleFill)"
+        letter-spacing="0">بولس الرسول</text>
+
+  <text x="320" y="688" text-anchor="middle" direction="rtl" unicode-bidi="embed"
+        font-family="Tajawal, 'Segoe UI', Tahoma, Arial, sans-serif"
+        font-size="32" font-weight="500" fill="#dcb08c"
+        letter-spacing="2">خدمة الشباب</text>
+
+  <!-- زخرفة سفلية -->
+  <g opacity=".7">
+    <circle cx="320" cy="722" r="3" fill="url(#gold)"/>
+    <circle cx="305" cy="722" r="2" fill="#d4a17d"/>
+    <circle cx="335" cy="722" r="2" fill="#d4a17d"/>
+  </g>
+</svg>
